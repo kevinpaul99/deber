@@ -10,3 +10,8 @@ function hora(){
         document.getElementById("re").innerHTML="Atletismo"
     }
 }
+function vh(){
+    let s=document.getElementById('s');
+    let sl=s.value;
+    document.getElementById('rec').innerText = `${sl}.`;
+}
