@@ -46,14 +46,15 @@
         <label for="">Inserte dos numeros: </label>
         <input type="text" id="n1"> 
         <input type="text" id="n2">
-        <select name="" id="operacion">
-            <option value="+">suma</option>
-            <option value="-">resta</option>
-            <option value="*">multiplicaion</option>
-            <option value="/">division</option>
+        <select name="" id="operacion" onchange="hola()">
+            <option value=+ id="sum">suma</option>
+            <option value=- id="res">resta</option>
+            <option value=* id="mul">multiplicaion</option>
+            <option value=/ id="div">division</option>
         </select>
         <button id="sr" onclick="res()">calcular</button>
         <label for="" id="e"></label>
+        <label for="" id="a"></label>
     </div>
     <div class="contenedor6"></div>
     <div class="contenedor7"></div>

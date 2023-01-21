@@ -37,7 +37,10 @@ function verifi(){
         document.getElementById("e").innerHTML="El numero mayor es: " + n3;
     }
 }
-function res(){
-    var n1 = document.getElementById("n1").value;
-    var n2 = document.getElementById("n2").value;
+function hola(){
+    let f=document.getElementById('operacion');
+    var fl=(f.value);
+    document.getElementById("e").innerHTML=fl;
+    var res= (n1) (fl) (n2);
+    document.getElementById("a").innerHTML=res;
 }
