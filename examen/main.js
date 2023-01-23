@@ -24,18 +24,34 @@ function veri(){
     }
 }
 function verifi(){
-    var n1 = document.getElementById("n1").value;
-    var n2 = document.getElementById("n2").value;
-    var n3 = document.getElementById("n3").value;
-    if(n1>n2 && n1>n3){
-        document.getElementById("e").innerHTML="El numero mayor es: " + n1;
-    }
-    if(n2>n1 && n2>n3){
-        document.getElementById("e").innerHTML="El numero mayor es: " + n2;
-    }
-    if(n3>n1 && n3>n2){
-        document.getElementById("e").innerHTML="El numero mayor es: " + n3;
-    }
+    var numero1 = parseInt(document.getElementById("n1").value);
+    var numero2 = parseInt(document.getElementById("n2").value);
+    var numero3 = parseInt(document.getElementById("n3").value);
+    if (numero1 == numero2 && numero1 == numero3){
+   document.getElementById("e").innerHTML="Numero 1, Numero 2 y Numero 3 son iguales! y valen: "+numero1+"";
+   }
+   else{
+      if (numero1 > numero2){
+         if (numero1 > numero3){
+            document.getElementById("e").innerHTML=("Numero 1 es el Mayor y vale: "+numero1+"");
+            }
+            else{
+               document.getElementById("e").innerHTML=("Numero 3 es el Mayor y vale: "+numero3+"");
+               }
+      }
+      else{
+         if(numero1 < numero2){
+            if (numero2 > numero3){
+               document.getElementById("e").innerHTML=("Numero 2 es el Mayor y vale: "+numero2+"");
+               }
+               else{
+                document.getElementById("e").innerHTML=("Numero 3 es el Mayor y vale: "+numero3+"");
+                  }
+            }
+         }
+   }
+   
+   document.getElementById("o").innerHTML=("Numero 1 = " + numero1 + " Numero 2 = " + numero2 +" Numero 3 = "+ numero3);
 }
 window.addEventListener("DOMContentLoaded",function(){
     document.getElementById('y').addEventListener('click',function(){
