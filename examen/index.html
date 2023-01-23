@@ -42,21 +42,37 @@
         <label for="" id="e"></label>
     </div
     <div lass="contenedor5">
-        <h2>Operciones basicas: </h2>
-        <label for="">Inserte dos numeros: </label>
-        <input type="text" id="n1"> 
-        <input type="text" id="n2">
-        <select name="" id="operacion" onchange="hola()">
-            <option value=+ id="sum">suma</option>
-            <option value=- id="res">resta</option>
-            <option value=* id="mul">multiplicaion</option>
-            <option value=/ id="div">division</option>
+        <h2>Operaciones basicas</h2>
+        <label>Digite dos numero</label>
+        <input type="number" id='nl1'>
+        <input type="number" id='nl2'> 
+        <select id='op'>
+            <option value='1'>Multiplicación</option>
+            <option value='2'>resta</option>
+            <option value="3">division</option>
+            <option value="4">suma</option>
         </select>
-        <button id="sr" onclick="res()">calcular</button>
-        <label for="" id="e"></label>
-        <label for="" id="a"></label>
+        <input id="y" type="button" value="Calcular">
+        <label for="" id="ad"></label>
     </div>
-    <div class="contenedor6"></div>
-    <div class="contenedor7"></div>
+        <div class="contenedor6">
+            <h2>Es mayor o menor de edad</h2>
+            <label for="">Ingrese su edad:</label>
+            <input type="text" id="edad">
+            <button onclick="edad()">Resultado</button>
+            <label for="" id="jh"></label>
+        </div>
+        <div class="contenedor7">
+            <h2>Promedio de 5 notas: </h2>
+            <label for="">Inserte 5 notas para poder calcular su promedio</label>
+            <input type="text" id="no1">
+            <input type="text" id="no2">
+            <input type="text" id="no3">
+            <input type="text" id="no4">
+            <input type="text" id="no5">
+            <button onclick="Resul()">Resultado</button><br>
+            <label for="" id="prome"></label><br>
+            <label for="" id="pasa"></label>
+        </div>
 </body>
 </html>
