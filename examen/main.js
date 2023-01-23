@@ -40,20 +40,20 @@ function verifi(){
 window.addEventListener("DOMContentLoaded",function(){
     document.getElementById('y').addEventListener('click',function(){
     var op = document.getElementById('op').value,
-    nl1 = parseInt((document.getElementById('nl1')).value);
-    nl2 = parseInt((document.getElementById('nl2')).value);
+    nul1 = parseInt((document.getElementById('nul1')).value);
+    nul2 = parseInt((document.getElementById('nul2')).value);
     if(op==1){
-        operacion=nl1*nl2;
-        document.getElementById('ad').innerHTML = operacion;
+        operacion=nul1*nul2;
+        document.getElementById('rsl').innerHTML = operacion;
     } if(op==2){
-        operacion=nl1-nl2;
-        document.getElementById('ad').innerHTML = operacion;
+        operacion=nul1-nul2;
+        document.getElementById('rsl').innerHTML = operacion;
     } if(op==3){
-        operacion=nl1/nl2;
-        document.getElementById('ad').innerHTML = operacion;
+        operacion=nul1/nul2;
+        document.getElementById('rsl').innerHTML = operacion;
     } if (op==4){
-        operacion=nl1+nl2;
-        document.getElementById('ad').innerHTML = operacion; 
+        operacion=nul1+nul2;
+        document.getElementById('rsl').innerHTML = operacion; 
     }
     }); 
   });
