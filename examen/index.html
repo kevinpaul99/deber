@@ -9,21 +9,22 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="Contenedor1">
-        <h2>Verificar hora de entrenamiento de la cancha:</h2>
-        <label for="">Ingrese la hora: <input type="text" name="" id="q"></label>
+    <div class="contenedor1">
+        <h2>Entrenamiento de la cancha:</h2>
+        <br>
+        <label for="">Ingrese la hora: </label>
+        <input type="text" name="" id="q" >
         <button onclick="hora()">Enviar</button>
-        <label for="">Resultado</label>
         <label for="" id="re"></label>
     </div>
-    <div class="Contenedor2">
-        <h2>Verificar a que tienes entrenamiento en la cancha</h2>
+    <div class="contenedor2">
+        <h2>Entrenamiento en la cancha</h2>
         <select name="" id="s" onchange="vh()">
             <option value="">Selecione uno de los deportes: </option>
             <option value="Uso de la cancha desde las 1-3">Futbol</option>
             <option value="Uso de la cancha desde las 3-6">Futbol Americano</option>
             <option value="Uso de la cancha desde las 6-9">Atletismo</option>
-        </select>
+        </select><br>  
         <label for="" id="rec"></label>
     </div>
     <div class="contenedor3">
@@ -34,15 +35,14 @@
         <label for="" id="w"></label>
     </div>
     <div class="contenedor4">
-        <h2>Numero mayor de tres numeros</h2>
+        <h2>Mayor de 3 numeros</h2>
         <input type="text" id="n1">
         <input type="text" id="n2">
         <input type="text" id="n3">
         <button onclick="verifi()">Verificar</button>
-        <label for="" id="e"></label><br>
-        <label for="" id="o"></label>
-    </div
-    <div lass="contenedor5">
+        <label for="" id="e"></label>
+    </div>
+    <div class="contenedor5">
         <h2>Operaciones basicas</h2>
         <label>Digite dos numero</label>
         <input type="number" id='nul1'>
@@ -52,7 +52,7 @@
             <option value='2'>resta</option>
             <option value="3">division</option>
             <option value="4">suma</option>
-        </select>
+        </select><br>
         <input id="y" type="button" value="Calcular">
         <label for="" id="rsl"></label>
     </div>

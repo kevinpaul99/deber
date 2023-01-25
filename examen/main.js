@@ -51,7 +51,6 @@ function verifi(){
          }
    }
    
-   document.getElementById("o").innerHTML=("Numero 1 = " + numero1 + " Numero 2 = " + numero2 +" Numero 3 = "+ numero3);
 }
 window.addEventListener("DOMContentLoaded",function(){
     document.getElementById('y').addEventListener('click',function(){
@@ -75,7 +74,7 @@ window.addEventListener("DOMContentLoaded",function(){
 });
 function edad(){
     var ed=parseInt(document.getElementById("edad").value);
-    if(n1>=18){
+    if(ed>=18){
         document.getElementById("jh").innerHTML="Eres mayor de edad";
     }else{
         document.getElementById("jh").innerHTML="Eres menor de edad";
